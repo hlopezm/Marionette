@@ -30,11 +30,11 @@
     </div>
 
   <div id="main-region" class="container">
-        <h1>Projects metropoli</h1>
+        <h1>static text </h1>
   </div>
 
-    <script type="text/template" id="contact-template">
-       <p> <%= fistName %> <%= lastName %> </p>
+    <script type="text/template" id="contact-list-item">
+       <%= firstName %> <%= lastName %>
     </script>
 
 
@@ -53,22 +53,45 @@
 
       ContactManager.Contact = Backbone.Model.extend({});
 
-      ContactManager.ContactView = Marionette.ItemView.extend({
-          template: "#contact-template"
+      ContactManager.ContactCollection = Backbone.Collection.extend({
+          model: ContactManager.Contact
+          });
+
+
+      ContactManager.ContactItemView = Marionette.ItemView.extend({
+          tagName: "li",
+          template: "#contact-list-item"
       });
 
+     ContactManager.ContactsView = Marionette.CollectionView.extend({
+         tagName: "ul",
+         itemView: ContactManager.ContactItemView
+         });
+
      ContactManager.on("initialize:after", function(){
-         var alice = new ContactManager.Contact({
-           firstName: "Alice",
-           lastName: "Arten",
-           phoneNumber: "123-456"
+         var contacts = new ContactManager.ContactCollection([
+           {
+             firstName: "Bob",
+             lastName: "Brigham",
+             phoneNumber: "674-799"
+           },
+           {
+             firstName: "Alice",
+             lastName: "Arten",
+             phoneNumber: "234-567"
+           },
+           {
+             firstName: "Marcus",
+             lastName: "Marrten",
+             phoneNumber: "884-588"
+           }
+           ]);
+
+         var contactsListView = new ContactManager.ContactsView({
+           collection: contacts
            });
 
-         var aliceView = new ContactManager.ContactView({
-           model: alice
-           });
-
-         ContactManager.mainRegion.show(aliceView);
+         ContactManager.mainRegion.show(contactsListView);
      });
 
     ContactManager.start();
