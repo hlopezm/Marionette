@@ -4,10 +4,22 @@ List.Contact = Marionette.ItemView.extend({
   template: "#contact-list-item",
 
   events: {
-    "click": "highligthname"
+    "click": "highlightName",
+    "click button.js-delete": "deleteClicked"
   },
-  highligthname: function(){
+
+  highlightName: function(e){
     this.$el.toggleClass("warning");
+  },
+
+  deleteClicked: function(e){
+    e.stopPropagation();
+    this.trigger("contact:delete", this.model);
+  },
+
+  remove: function () {
+    this.$el.fadeOut();
+    Marionette.ItemView.prototype.remove.call(self);
   }
 });
 
@@ -17,6 +29,5 @@ List.Contacts = Marionette.CompositeView.extend({
     template: "#contact-list",
     itemView: List.Contact,
     itemViewContainer: "tbody"
-  });
-
+    });
 });
