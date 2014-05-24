@@ -1,0 +1,1 @@
+ContactManager.module("ContactsApp.Show",function(t,n,o,e,a,c){t.Controller={showContact:function(o){var e=n.request("contact:entities"),a=e.get(o),c;c=void 0!==a?new t.Contact({model:a}):new t.MissingContact,n.mainRegion.show(c)}}});

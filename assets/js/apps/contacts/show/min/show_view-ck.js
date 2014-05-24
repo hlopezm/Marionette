@@ -1,0 +1,1 @@
+ContactManager.module("ContactsApp.Show",function(t,e,n,a,c,i){t.MissingContact=a.ItemView.extend({template:"#missing-contact-view"}),t.Contact=a.ItemView.extend({template:"#contact-view"})});

@@ -5,11 +5,18 @@ List.Contact = Marionette.ItemView.extend({
 
   events: {
     "click": "highlightName",
+    "click td a.js-show": "showClicked",
     "click button.js-delete": "deleteClicked"
   },
 
   highlightName: function(e){
     this.$el.toggleClass("warning");
+  },
+
+  showClicked: function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    this.trigger("contact:show", this.model);
   },
 
   deleteClicked: function(e){
@@ -18,8 +25,10 @@ List.Contact = Marionette.ItemView.extend({
   },
 
   remove: function () {
-    this.$el.fadeOut();
-    Marionette.ItemView.prototype.remove.call(self);
+    var self = this;
+    this.$el.fadeOut(function(){
+      Marionette.ItemView.prototype.remove.call(self);
+    });
   }
 });
 

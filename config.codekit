@@ -49,6 +49,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/js\/apps\/contacts\/contacts_app.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/apps\/contacts\/contacts_app.js",
+		"outputAbbreviatedPath": "\/assets\/js\/apps\/contacts\/min\/contacts_app-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/assets\/js\/apps\/contacts\/list\/list_controller.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -71,12 +82,100 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/js\/apps\/contacts\/list\/min\/list_controller-ck.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/apps\/contacts\/list\/min\/list_controller-ck.js",
+		"outputAbbreviatedPath": "\/assets\/js\/apps\/contacts\/list\/min\/min\/list_controller-ck-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/js\/apps\/contacts\/list\/min\/list_view-ck.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/apps\/contacts\/list\/min\/list_view-ck.js",
+		"outputAbbreviatedPath": "\/assets\/js\/apps\/contacts\/list\/min\/min\/list_view-ck-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/js\/apps\/contacts\/min\/contacts_app-ck.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/apps\/contacts\/min\/contacts_app-ck.js",
+		"outputAbbreviatedPath": "\/assets\/js\/apps\/contacts\/min\/min\/contacts_app-ck-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/js\/apps\/contacts\/show\/min\/show_controller-ck.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/apps\/contacts\/show\/min\/show_controller-ck.js",
+		"outputAbbreviatedPath": "\/assets\/js\/apps\/contacts\/show\/min\/min\/show_controller-ck-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/js\/apps\/contacts\/show\/min\/show_view-ck.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/apps\/contacts\/show\/min\/show_view-ck.js",
+		"outputAbbreviatedPath": "\/assets\/js\/apps\/contacts\/show\/min\/min\/show_view-ck-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/js\/apps\/contacts\/show\/show_controller.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/apps\/contacts\/show\/show_controller.js",
+		"outputAbbreviatedPath": "\/assets\/js\/apps\/contacts\/show\/min\/show_controller-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/js\/apps\/contacts\/show\/show_view.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/apps\/contacts\/show\/show_view.js",
+		"outputAbbreviatedPath": "\/assets\/js\/apps\/contacts\/show\/min\/show_view-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/assets\/js\/entities\/contact.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/entities\/contact.js",
 		"outputAbbreviatedPath": "\/assets\/js\/entities\/min\/contact-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/js\/min\/app-ck.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/min\/app-ck.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/min\/app-ck-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,

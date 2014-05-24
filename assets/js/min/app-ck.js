@@ -1,0 +1,1 @@
+var ContactManager=new Marionette.Application;ContactManager.addRegions({mainRegion:"#main-region"}),ContactManager.on("initialize:after",function(){Backbone.history&&(Backbone.history.start(),(Backbone.history.fragment="")&&(Backbone.history.navigate("contacts"),ContactManager.ContactsApp.List.Controller.listContacts()))});
